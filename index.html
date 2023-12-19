@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Фамилия - Программист</title>
+    <style>
+        /* Ваш CSS стиль остается неизменным */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Имя Фамилия</h1>
+        <p>Программист</p>
+    </header>
+
+    <section>
+        <h2>О себе</h2>
+        <p>Привет! Меня зовут Имя Фамилия, и я опытный программист с фокусом на веб-разработке. Стремлюсь создавать
+            эффективные и инновационные решения для клиентов.</p>
+
+        <h2>Навыки</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React.js, Node.js</li>
+            <li>SQL, MongoDB</li>
+            <li>Git, GitHub</li>
+            <!-- Добавьте свои дополнительные навыки -->
+        </ul>
+
+        <h2>Проекты</h2>
+        <ul>
+            <li><a href="#" onclick="showProjectDetails('Проект 1', 'Краткое описание проекта 1.');">Проект 1</a></li>
+            <li><a href="#" onclick="showProjectDetails('Проект 2', 'Краткое описание проекта 2.');">Проект 2</a></li>
+            <!-- Добавьте свои проекты с вызовом функции showProjectDetails -->
+        </ul>
+
+        <div id="projectDetails">
+            <!-- Здесь будет отображаться описание проекта -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Свяжитесь со мной: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Вы также можете найти меня в <a href="https://github.com/yourusername" target="_blank">GitHub</a>.</p>
+    </footer>
+
+    <script>
+        function showProjectDetails(projectName, projectDescription) {
+            var projectDetailsDiv = document.getElementById('projectDetails');
+            projectDetailsDiv.innerHTML = '<h3>' + projectName + '</h3><p>' + projectDescription + '</p>';
+        }
+    </script>
+</body>
+
+</html>
